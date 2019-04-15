@@ -8,9 +8,10 @@ when (i%15 == 0)
     puts " FIZZBUZZ"
 when (i%5 == 0)
     print i
-    puts " buzz"
+    puts " BUZZ"
 when (i%3 == 0)
     print i
-    puts " fizz"
+    puts " FIZZ"
+else puts i
 end
 }
