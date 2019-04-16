@@ -1,6 +1,7 @@
 ＝begin
 ユークリッドの互除法を用いて最大公約数をだす
 =end
+
 print "一つ目"
 
 x = gets.to_i
