@@ -31,12 +31,6 @@ s.each_char{|s|
 }
 
 
-=begin 一旦封印
-1.upto(i){|i|
-    if mojiretu[]
-}
-=end
-
 
 print "もっとも出現頻度が多かった文字は#{mchar}で#{mcnt}回です"
 
