@@ -2,7 +2,6 @@
 １０人分の名前・テスト１の点数と評価・テスト２の点数と評価を出す
 その後全体の合計点と平均点を出す（科目ごと）
 =end
-
 def hyouka(tensu)
     case tensu
       when 80..100
@@ -32,8 +31,6 @@ gkt2 = 0
     gkt1 += t1 
     gkt2 += t2
 end
-
-
 
 test.each{|kk|
     puts "#{kk[:name]}はテスト１は#{kk[:test1]}点で評価は#{hyouka(kk[:test1])}です。テスト２は#{kk[:test2]}点で#{hyouka(kk[:test2])}です。"
