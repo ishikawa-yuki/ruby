@@ -19,7 +19,7 @@ end
 class TestResult
     attr_accessor :name, :test1, :test2
     def initialize(name,test1,test2)
-        @student = name
+        @name = name
         @test1 = test1
         @test2 = test2
     end
