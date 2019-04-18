@@ -16,7 +16,6 @@ end
 
 dbh = DBI.connect('DBI:SQLite3:test_kekka.db')
 
-
 while(1)do
 
     puts "行う操作を入力してください"
@@ -49,6 +48,8 @@ while(1)do
                     break
                 end
             end
+            dbh.do("DROP TABLE IF EXISTS test_kekka")
+            dbh.do("CREATE TABLE test_kekka(id INT PRIMARY KEY, name CHAR(20) NOT NULL, test1 INT NOT NULL, test1_hyouka CHAR(20) NOT NULL, test2 INT NOT NULL, test2_hyouka CHAR(20) NOT NULL)")
             i.times{|n|
                 puts "#{n+1}人目の氏名を入力してください"
                 st = gets.chomp
